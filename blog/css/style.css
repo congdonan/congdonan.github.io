@@ -52,49 +52,49 @@
 
 /* Imported Typeface Files */
 @font-face {
-    font-family:Lato;
-    src: url(../fonts/sans-serif/lato-regular.ttf);
+    font-family:'Lato';
+    src: url('../fonts/sans-serif/lato-regular.ttf') format('truetype');
     font-style:normal;
     font-weight:normal;
 }
 @font-face {
 
-    font-family:Montserrat;
-    src: url(../fonts/sans-serif/montserrat-regular.ttf);
+    font-family:'Montserrat';
+    src: url('../fonts/sans-serif/montserrat-regular.ttf') format('truetype'); 
     font-style:normal;
     font-weight:normal;
 }
 
 @font-face {
-    font-family:Robotoslab;
-    src: url(../fonts/serif/robotoslab-regular.ttf);
+    font-family:'Robotoslab';
+    src: url('../fonts/serif/robotoslab-regular.ttf') format('truetype');
     font-style:normal;
     font-weight:normal;
 }
 @font-face {
 
-    font-family:Opensans;
-    src: url(../fonts/sans-serif/opensans-regular.ttf);
+    font-family:'Opensans';
+    src: url('../fonts/sans-serif/opensans-regular.ttf') format('truetype');
     font-style:normal;
     font-weight:normal;
 }
 
 @font-face {
-    font-family:Ultra;
-    src: url(../fonts/serif/ultra-regular.ttf);
+    font-family:'Ultra';
+    src: url('../fonts/serif/ultra-regular.ttf') format('truetype');
     font-style:normal;
     font-weight:normal;
 }
 @font-face {
 
-    font-family:Roboto;
-    src: url(../fonts/sans-serif/roboto-regular.ttf);
+    font-family:'Roboto';
+    src: url('../fonts/sans-serif/roboto-regular.ttf') format('truetype');
     font-style:normal;
     font-weight:normal;
 }
 @font-face {
-    font-family:Rohazone ;
-    src: url(../fonts/serif/rozhaone-regular.ttf);
+    font-family:'Rohazone' ;
+    src: url('../fonts/serif/rozhaone-regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -104,25 +104,40 @@ html {
     font-size:16px;
 }
 
+
+/* Setup and defaults */
+* {
+    box-sizing: border-box;
+}
+
+
+
 /* Body & Main  */
 
 body {
-    font-family: Opensans, Arial, sans-serif;
+    font-family: 'Opensans', Arial, sans-serif;
     font-size:1rem;
     padding:auto;
     min-width:39rem;
     max-width:fit-content;
     background-color: #fff;
-margin:auto;
+    margin: 1.5rem auto;
+    width:90%;
+    
 }
+
 
 main {
     background: color #000000;
    border:0px solid #333;
-   margin-right: 25%;
+   margin-right: 30%;
 }
 
+/* Layout */
 
+
+
+/* Typography */
 h1 {
     text-transform: uppercase;
     font-size:2rem;
@@ -191,8 +206,9 @@ aside {
     position: absolute;
     right:0;
 top:0;
-width: 25%;
+width: 30%;
 image-rendering: auto;
+margin-top:200px;
 
 }
 
@@ -261,8 +277,8 @@ section {
 }
 
 .subsection {
-padding:0;
 
+    display: flex;
 
 }
 
@@ -299,6 +315,9 @@ p {
 
 .main-section {
     margin: auto;
+    display:grid;
+    grid-template-columns: 24fr 1fr;
+    grid-gap: 1rem;
 
 }
 
@@ -354,140 +373,15 @@ img {
     display:block;
 }
 
-$time: 0.3s;
-
-.gallery body {
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #bdd8f1;
-}
-
 .gallery {
-  display: grid;
-  grid-template-rows: repeat(1, 18vh);
-  grid-template-columns: repeat(3, 45vw);
-  transition: all $time ease(gravity);
-  background-color: #82a6cb;
-  border-radius: 10px;
-  padding: 0.25em;
-  cursor: zoom-in;
-  // grid-gap: .25em;
-
-  @media (min-width: 40em) {
-    grid-template-rows: repeat(2, 20vh);
-  }
-
-  @media (min-width: 10em) and (orientation: landscape) {
-    grid-template-columns: repeat(5, 18vw);
-    grid-template-rows: repeat(2, 45vh);
-  }
-    
- @media (min-width: 60em) {
-    grid-template-columns: repeat(10, 8vw);
-    grid-template-rows: 25vh;
-  }
+    display:grid;
+    columns: 3;
+    column-gap: ;
+justify-content: left;
+flex-direction: row;
+align-items: auto;
+align-self: auto;
 }
-
-.gallery img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: all $time/2 ease(downhill);
-  position: relative;
-  box-shadow: 0 0 0 #0000;
-  opacity: 0.67;
-  filter: sepia(80%) hue-rotate(180deg);
-
-  &:first-child {
-    border-radius: 10px 10px 0 0;
-  }
-  &:last-child {
-    border-radius: 0 0 10px 10px;
-  }
-
-  @media (min-width: 40em) and (max-width: 59.99em) {
-    &:first-child {
-      border-radius: 10px 0 0 0;
-    }
-    &:nth-child(5) {
-      border-radius: 0 10px 0 0;
-    }
-    &:nth-child(6) {
-      border-radius: 0 0 10px 0;
-    }
-    &:last-child {
-      border-radius: 0 0 0 10px;
-    }
-  }
-
-  @media (min-width: 60em) {
-    &:first-child {
-      border-radius: 10px 0 0 10px;
-    }
-    &:last-child {
-      border-radius: 0 10px 10px 0;
-    }
-  }
-
-  .gallery &:hover {
-    opacity: 1;
-    z-index: 1;
-    box-shadow: 1em 1em 1em #0004;
-    transition: all $time ease(downhill);
-    filter: sepia(0%) hue-rotate(0deg);
-    border-radius: 5px;
-    width: 300%;
-    height: 300%;
-    left: -100%;
-    top: -100%;
-
-    @media (min-width: 40em) {
-      width: 250%;
-      height: 500%;
-      left: -75%;
-      top: -200%;
-    }
-    
-    @media (min-width: 10em) and (orientation: landscape) {
-      width: 250%;
-      height: 200%;
-    }
-       
-    @media (min-width: 40em) and (orientation: portrait) {
-      width: 300%;
-      height: 300%;
-      left: -100%;
-      top: -100%;
-    }
-
-    @media (min-width: 60em) {
-      width: 350%;
-      height: 150%;
-      left: -75%;
-      top: -25%;
-
-      ~ img {
-        left: 175%;
-      }
-    }
-
-    @media (min-width: 60em) and (orientation: landscape) {
-      width: 300%;
-      height: 300%;
-      left: -75%;
-      top: -100%;
-
-      ~ img {
-        left: 100%;
-      }
-    }
-  }
-}
-
 
 figure {
     
