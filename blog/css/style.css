@@ -237,6 +237,7 @@ aside div {
 display:block;
 padding:0.1em;
 }
+
 aside p {
     border-bottom: #000 1px solid;
     padding-bottom: 0.5rem;
@@ -247,9 +248,7 @@ aside p {
 
 nav {
     margin-top: 1rem;
-}
-
-.topnav {
+    border-style: solid;
     align-items:stretch;
     font-size: larger;
     font-family: 'Robotoslab', serif;
@@ -259,21 +258,19 @@ nav {
     padding: 1em;
     border-style:solid;
      border-width: medium 0 medium 0;
-     border-color: #000;
-   
+     border-color: #000;nav a {
+        font-size: larger;
+        font-stretch: expanded;
+        
+     }
+           
+        }
 
-   
 
-}
-
-.topnav a {
-font-size: larger;
-font-stretch: expanded;
-
-  
-   
-}
-
+nav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -281,12 +278,9 @@ font-stretch: expanded;
     color: black;
    
   }
+
   
   /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
 
   .current {
 font-style:oblique;
@@ -381,6 +375,10 @@ p {
   
 }
 
+button {
+    padding: 0.1rem
+}
+
 .button {
 
     background-color: rgb(245, 6, 6);
@@ -395,7 +393,7 @@ p {
  font-size: larger;
  align-self: center;
  box-shadow: #575454 1rem 4rem ;
-position: absolute;
+position:sticky
 box-decoration-break: slice;
 
 
