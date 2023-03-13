@@ -119,6 +119,7 @@ body {
 main {
     background: color #000000;
    border:0px solid #333;
+   margin: auto;
 }
 
 
@@ -129,7 +130,7 @@ h1 {
     letter-spacing: .5rem;
     color:darkred;
     text-shadow:.09375rem .09375rem .09375rem #000;
-    font-family:'Ultra', Garamond, serif;
+    font-family:'Lato', Garamond, serif;
     text-align:center;
     transform:rotate(-10deg);
     padding:1em;
@@ -156,6 +157,7 @@ h3 {
     font-size: 2rem;
     font-weight: normal;
     text-align:center;
+    padding-top: 2em;
 }
 
 h4 {
@@ -190,7 +192,7 @@ h5 {
 .topnav {
     align-items:stretch;
     font-size: larger;
-    font-family: Robotoslab, serif;
+    font-family: 'Robotoslab', serif;
    font-weight: bold;
     font-size: 1.1em;
     width: 100%;
@@ -255,7 +257,7 @@ p {
     padding: 1em;
     width: 90%;
     text-align: left;
-    text-indent: 2.5em;
+    
 
     
 }
@@ -283,6 +285,7 @@ margin {
 
 
 .highlight {
+    font-family: 'Ultra'; 'Times New Roman', serif;
   background-color: #aee46c;
   background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
   padding: 0.2em;
