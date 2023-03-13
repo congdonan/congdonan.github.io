@@ -246,8 +246,8 @@ section {
 }
 
 .subsection {
-margin: 0.1em;
-align-content: center;
+padding:0;
+image-rendering: auto;
 
 }
 
@@ -272,15 +272,7 @@ p {
   
 
 }
-span {
-    padding: 0.1;
-}
 
-margin {
-    padding: auto;
-    
-    
-    }
 
 
 
@@ -334,7 +326,8 @@ img {
 figure {
 
   margin-bottom: 0;
-   margin: 1rem;
+   background-color: lightgrey;
+  padding:0;
 }
 .article-image {
    float: left; 
@@ -343,9 +336,8 @@ figure {
 
 figcaption {
 padding-top: 0;
-text-align: right;
 padding-bottom: 1rem;
-padding-top: 0;
+
 
 }
 
