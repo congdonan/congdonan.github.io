@@ -1,0 +1,277 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* Imported Typeface Files */
+@font-face {
+    font-family:Lato;
+    src: url(../fonts/sans-serif/lato-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+
+    font-family:Montserrat;
+    src: url(../fonts/sans-serif/montserrat-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:Robotoslab;
+    src: url(../fonts/serif/robotoslab-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+
+    font-family:Opensans;
+    src: url(../fonts/sans-serif/opensans-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+@font-face {
+    font-family:Ultra;
+    src: url(../fonts/serif/ultra-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+
+    font-family:Roboto;
+    src: url(../fonts/sans-serif/roboto-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Rohazone ;
+    src: url(../fonts/serif/rozhaone-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+/* Root */
+
+html {
+    font-size:16px;
+}
+
+/* Body & Main  */
+
+body {
+    font-family:Opensans, Arial, sans-serif;
+    font-size:1rem;
+    padding:1rem;
+    min-width:39rem;
+    max-width:50rem;
+    margin:0 auto;
+}
+main {
+    background: color #000000;
+    background-image:url(../images/wrinkled-white-paper-background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border:0px solid #333;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    font-size:2rem;
+    margin: 0;
+    letter-spacing: .5rem;
+    color:darkred;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Ultra', Garamond, serif;
+    text-align:center;
+}
+
+h2 {
+
+    text-transform: uppercase;
+    color:rgb(90, 0, 139);
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Rohazone', Garamond, serif;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+    font-weight: normal;
+    text-align:center;
+}
+
+h3 {
+
+    text-transform: uppercase;
+    color:rgb(32, 2, 2);
+    text-shadow:.09375rem .09375rem .09375rem #575454;
+    font-family:'Robotoslab', Garamond, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align:center;
+}
+
+h4 {
+
+    text-transform: uppercase;
+    color:darkred;
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    font-family:'Lato', Garamond, serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    font-weight: normal;
+    padding-bottom: 1.125rem;
+    text-align:center;
+}
+
+h5 {
+
+   
+    font-size: 1rem;
+   margin-top: 0.25rem;
+   padding: 0.5rem;
+   background-color: #333;
+   color: #fff;
+   font-weight: normal;
+   text-align: center;
+}
+
+
+
+/* Section & Paragraph */
+
+section {
+
+    margin-top: 0.5rem;
+    
+}
+
+p {
+
+    margin: 1rem auto;
+    padding: 0 1rem;
+    width: 90%;
+    text-align: left;
+}
+
+margin {
+    padding: auto;
+    
+    
+    }
+
+span {
+   
+}
+
+.highlight {
+  background-color: #aee46c;
+  background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+  padding: 0.2em;
+}
+
+.button {
+
+  background-color: rgb(245, 6, 6);
+  font-weight: bold;
+  text-shadow: #fff2ac;
+  padding: 1em;
+  outline-style: double;
+  outline-width: thick;
+  outline-color: brown;
+  text-align: center;
+ font-family: initial;
+ font-size: larger;
+ align-self: center;
+ box-shadow: #575454;
+ position: relative;
+ 
+
+  
+}
+
+
+/* Image & Figure */
+
+img {
+
+    width: 100%;
+    margin: 0 auto;
+    max-width: 50rem;
+
+    
+}
+
+figure {
+
+    margin-bottom: 2rem;
+}
+
+figcaption {
+padding-top: 0.5rem;
+text-align: right;
+
+}
+
+h1>span {
+
+    padding: 0 0.5rem;
+}
+
+
+/* Footer */
+
+footer {
+
+    padding: 1rem;
+    border-top: 2rem solid #333;
+}
+
+
+
