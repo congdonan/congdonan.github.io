@@ -129,12 +129,23 @@ body {
 
 main {
     background: color #000000;
-   border:0px solid #333;
-   margin-right: 30%;
+   
 }
 
 /* Layout */
 
+.main-section {
+    margin: auto;
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 1rem;
+
+}
+
+article {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
 
 
 /* Typography */
@@ -202,20 +213,16 @@ h5 {
 
 /* Sidebar */
 aside {
-    height:100%;
-    position: absolute;
-    right:0;
-top:0;
-width: 30%;
-image-rendering: auto;
-margin-top:200px;
-
+  grid-column: 2 / 3;
+  grid-row: 1;
 }
 
 aside div {
 display:block;
 padding:0.1em;
 }
+
+
 /* Navigation */
 
 
@@ -313,13 +320,7 @@ p {
     
 }
 
-.main-section {
-    margin: auto;
-    display:grid;
-    grid-template-columns: 24fr 1fr;
-    grid-gap: 1rem;
 
-}
 
 .attribution {
    text-align: left;
@@ -370,28 +371,21 @@ box-decoration-break: slice;
 /* Image & Figure */
 
 img {
-    display:block;
+display: block;
+    width: 100%;
 }
 
-.gallery {
-    display:grid;
-    columns: 3;
-    column-gap: ;
-justify-content: left;
-flex-direction: row;
-align-items: auto;
-align-self: auto;
-}
+
 
 figure {
     
-  margin-bottom: 0;
-  padding:0;
+  margin:0px;
 }
 
 .article-image {
    float: left; 
-   margin: 2rem;
+   margin-right: 0.75rem;
+   width:33%;
 }
 
 figcaption {
