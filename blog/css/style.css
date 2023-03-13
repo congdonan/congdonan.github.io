@@ -112,14 +112,14 @@ body {
     padding:auto;
     min-width:39rem;
     max-width:fit-content;
-    margin:1rem;
     background-color: #fff;
+margin:auto;
 }
 
 main {
     background: color #000000;
    border:0px solid #333;
-   margin: auto;
+   margin-right: 25%;
 }
 
 
@@ -185,6 +185,21 @@ h5 {
    text-align: center;
 }
 
+/* Sidebar */
+aside {
+    height:100%;
+    position: absolute;
+    right:0;
+top:0;
+width: 25%;
+image-rendering: auto;
+
+}
+
+aside div {
+display:block;
+padding:0.1em;
+}
 /* Navigation */
 
 
@@ -479,6 +494,7 @@ figure {
   margin-bottom: 0;
   padding:0;
 }
+
 .article-image {
    float: left; 
    margin: 2rem;
