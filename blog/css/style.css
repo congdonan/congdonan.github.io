@@ -107,19 +107,18 @@ html {
 /* Body & Main  */
 
 body {
-    font-family:Opensans, Arial, sans-serif;
+    font-family: Opensans, Arial, sans-serif;
     font-size:1rem;
-    padding:1rem;
+    padding:auto;
     min-width:39rem;
-    max-width:50rem;
-    margin:0 auto;
+    max-width:fit-content;
+    margin:1rem;
+    background-color: #fff;
 }
+
 main {
     background: color #000000;
-    background-image:url(../images/wrinkled-white-paper-background.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border:0px solid #333;
+   border:0px solid #333;
 }
 
 
@@ -132,6 +131,8 @@ h1 {
     text-shadow:.09375rem .09375rem .09375rem #000;
     font-family:'Ultra', Garamond, serif;
     text-align:center;
+    transform:rotate(-10deg);
+    padding:1em;
 }
 
 h2 {
@@ -182,22 +183,95 @@ h5 {
    text-align: center;
 }
 
+/* Navigation */
 
+
+
+.topnav {
+    align-items:stretch;
+    font-size: larger;
+    font-family: Robotoslab, serif;
+   font-weight: bold;
+    font-size: 1.1em;
+    width: 100%;
+    padding: 1em;
+    border-style:solid;
+     border-width: medium 0 medium 0;
+     border-color: #000;
+   
+
+   
+
+}
+
+.topnav a {
+font-size: larger;
+font-stretch: expanded;
+
+  
+   
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+   
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .current {
+font-style:oblique;
+font-variant:small-caps;
+font-stretch: extra-expanded;
+ transform: rotate(20deg) rotateX(-10deg) skewX(-2deg);
+ -webkit-transform: rotate(-20deg);
+ text-decoration:line-through;
+  }
 
 /* Section & Paragraph */
 
 section {
 
-    margin-top: 0.5rem;
+    margin-top: 0.5rem; 
     
+}
+
+.subsection {
+margin: 0.1em;
+align-content: center;
+
 }
 
 p {
 
-    margin: 1rem auto;
-    padding: 0 1rem;
+    margin: auto;
+    padding: 1em;
     width: 90%;
     text-align: left;
+    text-indent: 2.5em;
+
+    
+}
+
+.main-section {
+    margin: auto;
+
+}
+
+.attribution {
+   text-align: left;
+  
+
+}
+span {
+    padding: 0.1;
 }
 
 margin {
@@ -206,9 +280,7 @@ margin {
     
     }
 
-span {
-   
-}
+
 
 .highlight {
   background-color: #aee46c;
@@ -218,7 +290,7 @@ span {
 
 .button {
 
-  background-color: rgb(245, 6, 6);
+    background-color: rgb(245, 6, 6);
   font-weight: bold;
   text-shadow: #fff2ac;
   padding: 1em;
@@ -230,38 +302,58 @@ span {
  font-size: larger;
  align-self: center;
  box-shadow: #575454;
- position: relative;
- 
+position: absolute;
+box-decoration-break: slice;
+
 
   
 }
 
+.datetime {
+    font-weight: medium;
+    text-align: right;
+    align-self: center;
+    padding: 0.1rem;
+    white-space: normal;
+
+}
 
 /* Image & Figure */
 
 img {
 
-    width: 100%;
-    margin: 0 auto;
-    max-width: 50rem;
 
-    
+    max-width: fit-content;
+    margin: auto;
+     
 }
 
 figure {
 
-    margin-bottom: 2rem;
+  margin-bottom: 0;
+   margin: 1rem;
+}
+.article-image {
+   float: left; 
+   margin: 2rem;
 }
 
 figcaption {
-padding-top: 0.5rem;
+padding-top: 0;
 text-align: right;
+padding-bottom: 1rem;
+padding-top: 0;
 
 }
 
 h1>span {
 
     padding: 0 0.5rem;
+    position: sticky;
+    
+}
+menu {
+font-variant: small-caps;
 }
 
 
