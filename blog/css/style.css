@@ -110,6 +110,9 @@ html {
     box-sizing: border-box;
 }
 
+header {
+    padding: 0.5rem 0rem 1rem 0rem;
+}
 
 
 /* Body & Main  */
@@ -151,14 +154,14 @@ article {
 /* Typography */
 h1 {
     text-transform: uppercase;
-    font-size:2rem;
+    font-size:2.5rem;
     margin: 0;
-    letter-spacing: .5rem;
+    letter-spacing: .25rem;
     color:darkred;
     text-shadow:.09375rem .09375rem .09375rem #000;
     font-family:'Lato', Garamond, serif;
     text-align:center;
-    transform:rotate(-10deg);
+    transform:rotate(-7deg);
     padding:1em;
 }
 
@@ -225,7 +228,9 @@ padding:0.1em;
 
 /* Navigation */
 
-
+nav {
+    margin-top: 1rem;
+}
 
 .topnav {
     align-items:stretch;
@@ -286,9 +291,18 @@ section {
 .subsection {
 
     display: flex;
+    margin: 1rem 0rem;
 
 }
 
+.subsection figure {
+    margin: 0rem 0.25rem;
+    background-color: #fff2ac;
+}
+
+.subsection figure figcaption {
+    padding: 0.5rem 0.5rem;
+}
 
 .responsive {
     padding: 0 6px;
@@ -315,6 +329,7 @@ p {
     padding: 1em;
     width: 90%;
     text-align: left;
+    font-family: 'Roboto', Arial, sans-serif;
     
 
     
@@ -336,6 +351,7 @@ p {
   background-color: #aee46c;
   background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
   padding: 0.2em;
+  display: inline-block;
 }
 
 .button {
@@ -378,7 +394,7 @@ display: block;
 
 
 figure {
-    
+    background-color: lightgray;
   margin:0px;
 }
 
