@@ -409,10 +409,18 @@ p {
   
 }
 
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
 button {
-    background-color:rgb(232, 125, 125);
+    background-color:rgb(242, 208, 208);
     font-family: 'Ultra', "times new roman", serif;
-    color:#ddd
+    justify-content: center;
+    outline:0;
+    border:0;
+    border-radius:0.5em;
 }
 
 .button {
@@ -433,6 +441,8 @@ color:ffffff;
 box-decoration-break: slice;
 width: 10em;
 box-width: 10em;
+justify-content: center;
+
 }
 
 
