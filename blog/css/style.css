@@ -165,6 +165,24 @@ article {
 }
 
 
+
+/* Link Styling */
+
+a {
+    outline: none;
+
+}
+
+a:link, a:visited {
+color: #33658A;
+
+}
+
+a:focus, a:hover {
+text-decoration: none;
+color:#025033
+}
+
 /* Typography */
 h1 {
     text-transform:capitalize;
@@ -247,6 +265,11 @@ aside p {
     padding-bottom: 0.5rem;
 }
 
+.expand {
+    padding-top:0.1em;
+    font-size: smaller;
+
+}
 
 /* Navigation */
 
@@ -379,9 +402,10 @@ p {
   
 }
 
-button {
+.button {
     padding: 0.1rem
-    background-color: rgb(245, 6, 6);
+    background-color:darkred;
+    background:darkred;
   font-weight: medium;
   text-shadow: #fff2ac;
   padding: 1em;
@@ -453,6 +477,7 @@ footer {
 
     padding: 1rem;
     border-top: 2rem solid #333;
+    clear: both;
 }
 
 
