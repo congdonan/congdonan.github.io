@@ -132,7 +132,7 @@ nav a {
 /* Body & Main  */
 
 body {
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size:1rem;
     padding:auto;
     min-width:39rem;
@@ -257,6 +257,7 @@ aside {
   grid-row: 1;
   border-left:#000 solid 1px;                                                        margin-left:0.5rem; 
   padding-left: 1rem;
+  
 }
 
 aside div {
@@ -334,8 +335,8 @@ section {
 .subsection {
 
     display: flex;
-    margin: 1rem;
-
+    margin: 0.5rem 0rem 0.5rem 0rem;
+b
 }
 
 .subsection figure {
@@ -375,7 +376,7 @@ section {
 p {
 
     text-align: left;
-    font-family: 'Roboto', Arial, sans-serif;
+   
 
     
 
@@ -385,7 +386,8 @@ p {
 
 
 .attribution {
-   text-align: left;
+   text-align: right;
+   
   
 
 }
