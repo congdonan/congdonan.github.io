@@ -195,7 +195,7 @@ h1 {
     text-align:center;
     transform:rotate(-7deg);
     padding:0.7em;
-
+    text-align: center;
 }
 
 h2 {
@@ -219,7 +219,7 @@ h3 {
     font-size: 2rem;
     font-weight: normal;
     text-align:center;
-    padding-top: 2em;
+    padding-top: 0;
 }
 
 h4 {
@@ -313,8 +313,8 @@ nav a:hover {
 font-style:oblique;
 font-variant:small-caps;
 font-stretch: extra-expanded;
- transform: rotate(20deg) rotateX(-10deg) skewX(-2deg);
- -webkit-transform: rotate(-20deg);
+ transform: rotate(10deg) rotateX(-10deg) skewX(-2deg);
+ -webkit-transform: rotate(-10deg);
  text-decoration:line-through;
   }
 
