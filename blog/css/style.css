@@ -424,7 +424,8 @@ button {
  box-shadow: 10px 10px;
 color:ffffff;
 box-decoration-break: slice;
-width:10em;
+width: 10em;
+box-width: 10em;
 }
 
 
