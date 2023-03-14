@@ -132,7 +132,7 @@ nav a {
 /* Body & Main  */
 
 body {
-    font-family: 'Opensans', Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
     font-size:1rem;
     padding:auto;
     min-width:39rem;
@@ -153,7 +153,7 @@ main {
 
 .main-section {
 
-    margin: auto;
+    margin: 1rem;
     display:grid;
     grid-template-columns: 4fr 1fr;
     grid-gap: 1rem;
@@ -209,7 +209,9 @@ h2 {
     font-size: 2.75rem;
     letter-spacing: 0.25rem;
     font-weight: normal;
-    text-align:center;
+    text-align:left;
+    margin-left:0.5em;
+    margin-bottom:0;
 }
 
 h3 {
@@ -221,7 +223,7 @@ h3 {
     font-size: 2rem;
     font-weight: normal;
     text-align:center;
-    padding-top: 0;
+    
 }
 
 h4 {
@@ -253,8 +255,8 @@ h5 {
 aside {
   grid-column: 2 / 3;
   grid-row: 1;
-  border-left:#000 solid 1px;                                                                     
-  padding-left: 0.75rem;
+  border-left:#000 solid 1px;                                                        margin-left:0.5rem; 
+  padding-left: 1rem;
 }
 
 aside div {
