@@ -402,6 +402,12 @@ p {
   
 }
 
+button {
+    background-color:rgb(232, 125, 125);
+    font-family: 'Ultra', "times new roman", serif;
+    color:#ddd
+}
+
 .button {
     padding: 0.1rem
     background-color:darkred;
